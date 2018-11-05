@@ -19,7 +19,7 @@ h1 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 28px;
   margin-bottom: 2.5%;
-  margin-top: 100px;
+  margin-top: 10px;
   color: #FFFAFA;
 }
 
@@ -170,3 +170,9 @@ canvas {
   /* vertical-align: top; */
   z-index: -10;
 }
+/*
+img {
+    width: 500;
+    height: 500;
+    z-index: -5;
+} */

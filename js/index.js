@@ -19,9 +19,9 @@ var maxSnowBalls = 1000;
 var GRAVITY = 1;
 var balls = [];
 
-var streetviewAPI = 'https://maps.googleapis.com/maps/api/streetview?size=2500x2500&location='
-var filter = '&fov=90&heading=235&pitch=10&source=outdoor&key=AIzaSyB7Jbzxf8JQev-wBI4XGTypflanUOjgq3Y';
-var bg;
+// var streetviewAPI = 'https://maps.googleapis.com/maps/api/streetview?size=2500x2500&location='
+// var filter = '&fov=90&heading=235&pitch=10&source=outdoor&key=AIzaSyB7Jbzxf8JQev-wBI4XGTypflanUOjgq3Y';
+// var bg;
 
 function setup() {
   // createCanvas(0.8*screenW, 2/3*screenH);
@@ -31,8 +31,9 @@ function setup() {
   button.mousePressed(weatherAsk);
   input = select('#city');
 
-  var streetviewUrl = streetviewAPI + input.value() + filter;
-  bg = createImg(streetviewUrl);
+
+  // var streetviewUrl = streetviewAPI + input.value() + filter;
+  // bg = createImg(streetviewUrl);
 
   frameRate(40);
   for(var i = 0; i < maxSnowBalls; i++){
@@ -61,7 +62,7 @@ function gotData(data) {
 
 function draw() {
 
-  image(bg,0,0);
+  // image(bg,0,0);
   background(0);
 
   if (weather) {
